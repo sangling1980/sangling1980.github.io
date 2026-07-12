@@ -3,59 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shining - 个人简介</title>
+    <title>Shining - Personal Profile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
+            <div class="language-switch">
+                <button onclick="switchLanguage('zh')" class="lang-btn active">中文</button>
+                <button onclick="switchLanguage('en')" class="lang-btn">English</button>
+            </div>
+            
             <div class="avatar">
                 <i class="fas fa-user-tie"></i>
             </div>
-            <h1>Shining</h1>
-            <p class="title">副教授 | 财务管理专家 | 资深顾问</p>
+            <h1 data-zh="Shining" data-en="Shining">Shining</h1>
+            <p class="title" data-zh="副教授 | 财务管理专家 | 资深顾问" 
+               data-en="Associate Professor | Financial Management Expert | Senior Consultant">
+               副教授 | 财务管理专家 | 资深顾问
+            </p>
             <div class="credentials">
-                <span class="badge">注册会计师</span>
-                <span class="badge">法律职业资格</span>
+                <span class="badge" data-zh="注册会计师" data-en="CPA China">注册会计师</span>
+                <span class="badge" data-zh="法律职业资格" data-en="Legal Professional Qualification">法律职业资格</span>
             </div>
         </header>
 
         <main>
             <section class="about">
-                <h2><i class="fas fa-user-circle"></i> 个人简介</h2>
-                <p>副教授，中国香港浸会大学、复旦大学访问学者。持有中国注册会计师和全国法律职业资质。云南省国资委和云南省财政厅评审专家。</p>
+                <h2 data-zh="<i class='fas fa-user-circle'></i> 个人简介" 
+                    data-en="<i class='fas fa-user-circle'></i> About Me">
+                    <i class="fas fa-user-circle"></i> 个人简介
+                </h2>
+                <p data-zh="副教授，中国香港浸会大学、复旦大学访问学者。持有中国注册会计师和全国法律职业资质。云南省国资委和云南省财政厅评审专家。"
+                   data-en="Associate Professor, Visiting Scholar at Hong Kong Baptist University and Fudan University. Holds China CPA and National Legal Professional qualifications. Review expert for Yunnan SASAC and Yunnan Department of Finance.">
+                   副教授，中国香港浸会大学、复旦大学访问学者。持有中国注册会计师和全国法律职业资质。云南省国资委和云南省财政厅评审专家。
+                </p>
             </section>
 
             <section class="expertise">
-                <h2><i class="fas fa-briefcase"></i> 专业领域</h2>
+                <h2 data-zh="<i class='fas fa-briefcase'></i> 专业领域" 
+                    data-en="<i class='fas fa-briefcase'></i> Expertise">
+                    <i class="fas fa-briefcase"></i> 专业领域
+                </h2>
                 <div class="expertise-grid">
                     <div class="expertise-item">
                         <i class="fas fa-chart-line"></i>
-                        <h3>企业财务管理优化</h3>
+                        <h3 data-zh="企业财务管理优化" data-en="Corporate Financial Management Optimization">企业财务管理优化</h3>
                     </div>
                     <div class="expertise-item">
                         <i class="fas fa-balance-scale"></i>
-                        <h3>会计准则应用</h3>
+                        <h3 data-zh="会计准则应用" data-en="Accounting Standards Application">会计准则应用</h3>
                     </div>
                     <div class="expertise-item">
                         <i class="fas fa-laptop-code"></i>
-                        <h3>企业数字化转型</h3>
+                        <h3 data-zh="企业数字化转型" data-en="Corporate Digital Transformation">企业数字化转型</h3>
                     </div>
                     <div class="expertise-item">
                         <i class="fas fa-chalkboard-teacher"></i>
-                        <h3>教学与研究工作</h3>
+                        <h3 data-zh="教学与研究工作" data-en="Teaching and Research">教学与研究工作</h3>
                     </div>
                 </div>
             </section>
 
             <section class="clients">
-                <h2><i class="fas fa-building"></i> 服务机构</h2>
-                <p>先后为重庆市法院系统、中石油、云南省厦门商会、红云红河集团等近百家单位提供业务培训、管理咨询服务。</p>
+                <h2 data-zh="<i class='fas fa-building'></i> 服务机构" 
+                    data-en="<i class='fas fa-building'></i> Client Organizations">
+                    <i class="fas fa-building"></i> 服务机构
+                </h2>
+                <p data-zh="先后为重庆市法院系统、中石油、云南省厦门商会、红云红河集团等近百家单位提供业务培训、管理咨询服务。"
+                   data-en="Provided business training and management consulting services to nearly 100 organizations, including Chongqing Court System, PetroChina, Yunnan Xiamen Chamber of Commerce, Hongyun Honghe Group, and others.">
+                   先后为重庆市法院系统、中石油、云南省厦门商会、红云红河集团等近百家单位提供业务培训、管理咨询服务。
+                </p>
             </section>
 
             <section class="contact">
-                <h2><i class="fas fa-address-card"></i> 联系方式</h2>
+                <h2 data-zh="<i class='fas fa-address-card'></i> 联系方式" 
+                    data-en="<i class='fas fa-address-card'></i> Contact">
+                    <i class="fas fa-address-card"></i> 联系方式
+                </h2>
                 <div class="social-links">
                     <a href="https://github.com/sangling1980" target="_blank" class="social-link">
                         <i class="fab fa-github"></i>
@@ -67,15 +93,48 @@
                     </a>
                     <a href="https://weixin.qq.com" target="_blank" class="social-link">
                         <i class="fab fa-weixin"></i>
-                        <span>微信</span>
+                        <span>WeChat</span>
                     </a>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2026 Shining. All rights reserved.</p>
+            <p data-zh="&copy; 2026 Shining. 版权所有。" 
+               data-en="&copy; 2026 Shining. All rights reserved.">
+               &copy; 2026 Shining. 版权所有。
+            </p>
         </footer>
     </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // 更新语言按钮状态
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // 更新页面内容
+            const elements = document.querySelectorAll('[data-zh]');
+            elements.forEach(element => {
+                if (lang === 'zh') {
+                    element.innerHTML = element.getAttribute('data-zh');
+                } else {
+                    element.innerHTML = element.getAttribute('data-en');
+                }
+            });
+
+            // 更新HTML语言属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+            // 更新页面标题
+            if (lang === 'zh') {
+                document.title = 'Shining - 个人简介';
+            } else {
+                document.title = 'Shining - Personal Profile';
+            }
+        }
+    </script>
 </body>
 </html>
